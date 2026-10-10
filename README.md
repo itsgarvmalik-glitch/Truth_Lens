@@ -95,7 +95,7 @@ docker run -p 8080:8080 truthlens-ai
 ```text
 ├── src/
 │   ├── main/
-│   │   ├── java/com/Abhishekkashyap/AI_trust_Score_System/
+│   │   ├── java/com/garvmalik/AI_trust_Score_System/
 │   │   │   ├── controller/      # REST API Controllers (/api/analyze-upload, /api/auth, etc.)
 │   │   │   ├── service/         # MediaForensics, ContentAnalysis, FusionCalibrator
 │   │   │   ├── model/           # Data entities and DTOs
