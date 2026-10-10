@@ -1,0 +1,1000 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------< com.Abhishekkashyap:AI-trust-Score-System >--------------
+[INFO] Building AI-trust-Score-System 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:4.0.2:run (default-cli) > test-compile @ AI-trust-Score-System >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ AI-trust-Score-System ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 16 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ AI-trust-Score-System ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ AI-trust-Score-System ---
+[INFO] Copying 2 resources from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ AI-trust-Score-System ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:4.0.2:run (default-cli) < test-compile @ AI-trust-Score-System <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:4.0.2:run (default-cli) @ AI-trust-Score-System ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.2)
+
+2026-05-01T13:30:11.437+05:30  INFO 9892 --- [  restartedMain] c.A.A.AiTrustScoreSystemApplication      : Starting AiTrustScoreSystemApplication using Java 25.0.1 with PID 9892 (D:\minor proj\AI-trust-Score-System\AI-trust-Score-System\target\classes started by abhis in D:\minor proj\AI-trust-Score-System\AI-trust-Score-System)
+2026-05-01T13:30:11.441+05:30  INFO 9892 --- [  restartedMain] c.A.A.AiTrustScoreSystemApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-05-01T13:30:11.504+05:30  INFO 9892 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-01T13:30:11.505+05:30  INFO 9892 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-01T13:30:12.253+05:30  INFO 9892 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-01T13:30:12.327+05:30  INFO 9892 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 7 JPA repository interfaces.
+2026-05-01T13:30:12.859+05:30  INFO 9892 --- [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-05-01T13:30:12.872+05:30  INFO 9892 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-01T13:30:12.874+05:30  INFO 9892 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-05-01T13:30:12.915+05:30  INFO 9892 --- [  restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1409 ms
+2026-05-01T13:30:13.079+05:30  INFO 9892 --- [  restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-01T13:30:13.140+05:30  INFO 9892 --- [  restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-05-01T13:30:13.805+05:30  INFO 9892 --- [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-01T13:30:13.849+05:30  INFO 9892 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-01T13:30:18.168+05:30  INFO 9892 --- [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/trustdb user=SA
+2026-05-01T13:30:18.169+05:30  INFO 9892 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-01T13:30:18.209+05:30  INFO 9892 --- [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./data/trustdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TRUSTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-01T13:30:18.984+05:30  INFO 9892 --- [  restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-01T13:30:19.020+05:30  INFO 9892 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-01T13:30:19.081+05:30  INFO 9892 --- [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-01T13:30:19.300+05:30  INFO 9892 --- [  restartedMain] c.A.A.service.TextClassifierService      : Text classifier ready from D:\minor proj\AI-trust-Score-System\AI-trust-Score-System\tools\training\artifacts\text\text_classifier.json
+2026-05-01T13:30:20.913+05:30  WARN 9892 --- [  restartedMain] c.A.A.service.RagService                 : Embedding index build skipped: Embeddings HTTP 429
+2026-05-01T13:30:20.915+05:30  INFO 9892 --- [  restartedMain] c.A.A.service.RagService                 : RAG index ready. chunks=7, docs=7, dir=D:\minor proj\AI-trust-Score-System\AI-trust-Score-System\data\rag, embeddings=false
+2026-05-01T13:30:20.933+05:30  INFO 9892 --- [  restartedMain] c.A.A.service.FusionCalibratorService    : Fusion calibration ready from D:\minor proj\AI-trust-Score-System\AI-trust-Score-System\tools\training\artifacts\fusion\fusion_calibration.json
+2026-05-01T13:30:21.171+05:30  WARN 9892 --- [  restartedMain] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: de6290c5-1ecf-4a76-b868-927f71bca8fd
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-01T13:30:21.183+05:30  INFO 9892 --- [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-01T13:30:21.318+05:30  INFO 9892 --- [  restartedMain] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
+2026-05-01T13:30:21.582+05:30  INFO 9892 --- [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-05-01T13:30:21.586+05:30  INFO 9892 --- [  restartedMain] c.A.A.AiTrustScoreSystemApplication      : Started AiTrustScoreSystemApplication in 10.597 seconds (process running for 11.094)
+2026-05-01T13:30:34.799+05:30  INFO 9892 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-01T13:30:34.799+05:30  INFO 9892 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-01T13:30:34.810+05:30  INFO 9892 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-05-01T13:30:34.837+05:30  WARN 9892 --- [nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+Hibernate: select ua1_0.id,ua1_0.created_at,ua1_0.first_name,ua1_0.last_name,ua1_0.password_hash,ua1_0.role,ua1_0.user_id from user_accounts ua1_0 where upper(ua1_0.user_id)=upper(?)
+Hibernate: select c1_0.id,c1_0.ai_generated,c1_0.ai_probability,c1_0.captured_at,c1_0.confidence,c1_0.content_type,c1_0.created_at,c1_0.creator_name,c1_0.detail_summary,c1_0.explanation,c1_0.fake_content,c1_0.generated_by,c1_0.metadata,c1_0.provider,c1_0.rag_answer,c1_0.rag_sources,c1_0.result,c1_0.scan_signals,c1_0.source_location,c1_0.source_platform,c1_0.source_url,c1_0.text,c1_0.trust_score,c1_0.truth_label,c1_0.user_id from contents c1_0 where c1_0.user_id=? order by c1_0.created_at desc
+Hibernate: select c1_0.id,c1_0.ai_generated,c1_0.ai_probability,c1_0.captured_at,c1_0.confidence,c1_0.content_type,c1_0.created_at,c1_0.creator_name,c1_0.detail_summary,c1_0.explanation,c1_0.fake_content,c1_0.generated_by,c1_0.metadata,c1_0.provider,c1_0.rag_answer,c1_0.rag_sources,c1_0.result,c1_0.scan_signals,c1_0.source_location,c1_0.source_platform,c1_0.source_url,c1_0.text,c1_0.trust_score,c1_0.truth_label,c1_0.user_id from contents c1_0 where c1_0.user_id=? order by c1_0.created_at desc
+2026-05-01T13:42:59.699+05:30  INFO 9892 --- [nio-8080-exec-3] c.A.A.service.ContentAnalysisService     : Score breakdown: userId=sagarmehla13@gmail.com, textLength=332, type=VIDEO, baseScore=38, signalRisk=40, multimodalRisk=33, forensicsScore=40, aiScore=38, advancedRisk=27, combinedScore=34, fakeLikelihood=18, strongFakeSignal=false, aiGenerated=true, fakeContent=false, alignedScore=70
+2026-05-01T13:42:59.699+05:30  INFO 9892 --- [nio-8080-exec-3] c.A.A.service.ContentAnalysisService     : Formula: aiScore=38, textPatternRisk=0, textClassifierRisk=0, advancedRisk=27 => combinedScore=round(aiScore*0.6+advancedRisk*0.4)=34
+Hibernate: insert into contents (ai_generated,ai_probability,captured_at,confidence,content_type,created_at,creator_name,detail_summary,explanation,fake_content,generated_by,metadata,provider,rag_answer,rag_sources,result,scan_signals,source_location,source_platform,source_url,text,trust_score,truth_label,user_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into audit_logs (action,created_at,details,user_id,id) values (?,?,?,?,default)
+Hibernate: insert into audit_logs (action,created_at,details,user_id,id) values (?,?,?,?,default)
+Hibernate: select c1_0.id,c1_0.ai_generated,c1_0.ai_probability,c1_0.captured_at,c1_0.confidence,c1_0.content_type,c1_0.created_at,c1_0.creator_name,c1_0.detail_summary,c1_0.explanation,c1_0.fake_content,c1_0.generated_by,c1_0.metadata,c1_0.provider,c1_0.rag_answer,c1_0.rag_sources,c1_0.result,c1_0.scan_signals,c1_0.source_location,c1_0.source_platform,c1_0.source_url,c1_0.text,c1_0.trust_score,c1_0.truth_label,c1_0.user_id from contents c1_0 where c1_0.user_id=? order by c1_0.created_at desc
+2026-05-01T13:44:00.260+05:30  INFO 9892 --- [nio-8080-exec-9] c.A.A.service.ContentAnalysisService     : Score breakdown: userId=sagarmehla13@gmail.com, textLength=332, type=VIDEO, baseScore=26, signalRisk=8, multimodalRisk=21, forensicsScore=5, aiScore=20, advancedRisk=24, combinedScore=22, fakeLikelihood=11, strongFakeSignal=false, aiGenerated=false, fakeContent=false, alignedScore=5
+2026-05-01T13:44:00.281+05:30  INFO 9892 --- [nio-8080-exec-9] c.A.A.service.ContentAnalysisService     : Formula: aiScore=20, textPatternRisk=0, textClassifierRisk=0, advancedRisk=24 => combinedScore=round(aiScore*0.6+advancedRisk*0.4)=22
+Hibernate: insert into contents (ai_generated,ai_probability,captured_at,confidence,content_type,created_at,creator_name,detail_summary,explanation,fake_content,generated_by,metadata,provider,rag_answer,rag_sources,result,scan_signals,source_location,source_platform,source_url,text,trust_score,truth_label,user_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into audit_logs (action,created_at,details,user_id,id) values (?,?,?,?,default)
+Hibernate: select c1_0.id,c1_0.ai_generated,c1_0.ai_probability,c1_0.captured_at,c1_0.confidence,c1_0.content_type,c1_0.created_at,c1_0.creator_name,c1_0.detail_summary,c1_0.explanation,c1_0.fake_content,c1_0.generated_by,c1_0.metadata,c1_0.provider,c1_0.rag_answer,c1_0.rag_sources,c1_0.result,c1_0.scan_signals,c1_0.source_location,c1_0.source_platform,c1_0.source_url,c1_0.text,c1_0.trust_score,c1_0.truth_label,c1_0.user_id from contents c1_0 where c1_0.user_id=? order by c1_0.created_at desc
+2026-05-01T13:44:52.096+05:30  INFO 9892 --- [nio-8080-exec-1] c.A.A.service.ContentAnalysisService     : Score breakdown: userId=sagarmehla13@gmail.com, textLength=332, type=VIDEO, baseScore=26, signalRisk=8, multimodalRisk=25, forensicsScore=15, aiScore=20, advancedRisk=24, combinedScore=22, fakeLikelihood=14, strongFakeSignal=false, aiGenerated=false, fakeContent=false, alignedScore=5
+2026-05-01T13:44:52.114+05:30  INFO 9892 --- [nio-8080-exec-1] c.A.A.service.ContentAnalysisService     : Formula: aiScore=20, textPatternRisk=0, textClassifierRisk=0, advancedRisk=24 => combinedScore=round(aiScore*0.6+advancedRisk*0.4)=22
+Hibernate: insert into contents (ai_generated,ai_probability,captured_at,confidence,content_type,created_at,creator_name,detail_summary,explanation,fake_content,generated_by,metadata,provider,rag_answer,rag_sources,result,scan_signals,source_location,source_platform,source_url,text,trust_score,truth_label,user_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into audit_logs (action,created_at,details,user_id,id) values (?,?,?,?,default)
+Hibernate: select c1_0.id,c1_0.ai_generated,c1_0.ai_probability,c1_0.captured_at,c1_0.confidence,c1_0.content_type,c1_0.created_at,c1_0.creator_name,c1_0.detail_summary,c1_0.explanation,c1_0.fake_content,c1_0.generated_by,c1_0.metadata,c1_0.provider,c1_0.rag_answer,c1_0.rag_sources,c1_0.result,c1_0.scan_signals,c1_0.source_location,c1_0.source_platform,c1_0.source_url,c1_0.text,c1_0.trust_score,c1_0.truth_label,c1_0.user_id from contents c1_0 where c1_0.user_id=? order by c1_0.created_at desc
+2026-05-01T13:46:20.526+05:30  INFO 9892 --- [nio-8080-exec-4] c.A.A.service.ContentAnalysisService     : Score breakdown: userId=sagarmehla13@gmail.com, textLength=332, type=VIDEO, baseScore=38, signalRisk=52, multimodalRisk=33, forensicsScore=40, aiScore=41, advancedRisk=28, combinedScore=36, fakeLikelihood=18, strongFakeSignal=false, aiGenerated=true, fakeContent=false, alignedScore=70
+2026-05-01T13:46:20.539+05:30  INFO 9892 --- [nio-8080-exec-4] c.A.A.service.ContentAnalysisService     : Formula: aiScore=41, textPatternRisk=0, textClassifierRisk=0, advancedRisk=28 => combinedScore=round(aiScore*0.6+advancedRisk*0.4)=36
+Hibernate: insert into contents (ai_generated,ai_probability,captured_at,confidence,content_type,created_at,creator_name,detail_summary,explanation,fake_content,generated_by,metadata,provider,rag_answer,rag_sources,result,scan_signals,source_location,source_platform,source_url,text,trust_score,truth_label,user_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into audit_logs (action,created_at,details,user_id,id) values (?,?,?,?,default)
+Hibernate: insert into audit_logs (action,created_at,details,user_id,id) values (?,?,?,?,default)
+Hibernate: select c1_0.id,c1_0.ai_generated,c1_0.ai_probability,c1_0.captured_at,c1_0.confidence,c1_0.content_type,c1_0.created_at,c1_0.creator_name,c1_0.detail_summary,c1_0.explanation,c1_0.fake_content,c1_0.generated_by,c1_0.metadata,c1_0.provider,c1_0.rag_answer,c1_0.rag_sources,c1_0.result,c1_0.scan_signals,c1_0.source_location,c1_0.source_platform,c1_0.source_url,c1_0.text,c1_0.trust_score,c1_0.truth_label,c1_0.user_id from contents c1_0 where c1_0.user_id=? order by c1_0.created_at desc
+2026-05-01T13:47:06.132+05:30  INFO 9892 --- [nio-8080-exec-6] c.A.A.service.ContentAnalysisService     : Score breakdown: userId=sagarmehla13@gmail.com, textLength=43, type=PHOTO, baseScore=18, signalRisk=23, multimodalRisk=26, forensicsScore=20, aiScore=21, advancedRisk=23, combinedScore=22, fakeLikelihood=17, strongFakeSignal=false, aiGenerated=true, fakeContent=false, alignedScore=70
+2026-05-01T13:47:06.132+05:30  INFO 9892 --- [nio-8080-exec-6] c.A.A.service.ContentAnalysisService     : Formula: aiScore=21, textPatternRisk=0, textClassifierRisk=0, advancedRisk=23 => combinedScore=round(aiScore*0.6+advancedRisk*0.4)=22
+Hibernate: insert into contents (ai_generated,ai_probability,captured_at,confidence,content_type,created_at,creator_name,detail_summary,explanation,fake_content,generated_by,metadata,provider,rag_answer,rag_sources,result,scan_signals,source_location,source_platform,source_url,text,trust_score,truth_label,user_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into audit_logs (action,created_at,details,user_id,id) values (?,?,?,?,default)
+Hibernate: insert into audit_logs (action,created_at,details,user_id,id) values (?,?,?,?,default)
+Hibernate: select c1_0.id,c1_0.ai_generated,c1_0.ai_probability,c1_0.captured_at,c1_0.confidence,c1_0.content_type,c1_0.created_at,c1_0.creator_name,c1_0.detail_summary,c1_0.explanation,c1_0.fake_content,c1_0.generated_by,c1_0.metadata,c1_0.provider,c1_0.rag_answer,c1_0.rag_sources,c1_0.result,c1_0.scan_signals,c1_0.source_location,c1_0.source_platform,c1_0.source_url,c1_0.text,c1_0.trust_score,c1_0.truth_label,c1_0.user_id from contents c1_0 where c1_0.user_id=? order by c1_0.created_at desc
+2026-05-01T13:47:48.459+05:30  INFO 9892 --- [nio-8080-exec-8] c.A.A.service.ContentAnalysisService     : Score breakdown: userId=sagarmehla13@gmail.com, textLength=24, type=PHOTO, baseScore=22, signalRisk=23, multimodalRisk=34, forensicsScore=20, aiScore=25, advancedRisk=21, combinedScore=23, fakeLikelihood=14, strongFakeSignal=false, aiGenerated=true, fakeContent=false, alignedScore=70
+2026-05-01T13:47:48.459+05:30  INFO 9892 --- [nio-8080-exec-8] c.A.A.service.ContentAnalysisService     : Formula: aiScore=25, textPatternRisk=0, textClassifierRisk=0, advancedRisk=21 => combinedScore=round(aiScore*0.6+advancedRisk*0.4)=23
+Hibernate: insert into contents (ai_generated,ai_probability,captured_at,confidence,content_type,created_at,creator_name,detail_summary,explanation,fake_content,generated_by,metadata,provider,rag_answer,rag_sources,result,scan_signals,source_location,source_platform,source_url,text,trust_score,truth_label,user_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,default)
+2026-05-01T13:47:48.476+05:30  WARN 9892 --- [nio-8080-exec-8] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 22001, SQLState: 22001
+2026-05-01T13:47:48.476+05:30  WARN 9892 --- [nio-8080-exec-8] org.hibernate.orm.jdbc.error             : Value too long for column "SOURCE_URL CHARACTER VARYING(600)": "'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJ... (30067)"; SQL statement:
+insert into contents (ai_generated,ai_probability,captured_at,confidence,content_type,created_at,creator_name,detail_summary,explanation,fake_content,generated_by,metadata,provider,rag_answer,rag_sources,result,scan_signals,source_location,source_platform,source_url,text,trust_score,truth_label,user_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,default) [22001-240]
+2026-05-01T13:47:48.505+05:30 ERROR 9892 --- [nio-8080-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Value too long for column "SOURCE_URL CHARACTER VARYING(600)": "'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJ... (30067)"; SQL statement:
+insert into contents (ai_generated,ai_probability,captured_at,confidence,content_type,created_at,creator_name,detail_summary,explanation,fake_content,generated_by,metadata,provider,rag_answer,rag_sources,result,scan_signals,source_location,source_platform,source_url,text,trust_score,truth_label,user_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,default) [22001-240]] [insert into contents (ai_generated,ai_probability,captured_at,confidence,content_type,created_at,creator_name,detail_summary,explanation,fake_content,generated_by,metadata,provider,rag_answer,rag_sources,result,scan_signals,source_location,source_platform,source_url,text,trust_score,truth_label,user_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,default)]; SQL [insert into contents (ai_generated,ai_probability,captured_at,confidence,content_type,created_at,creator_name,detail_summary,explanation,fake_content,generated_by,metadata,provider,rag_answer,rag_sources,result,scan_signals,source_location,source_platform,source_url,text,trust_score,truth_label,user_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,default)]] with root cause
+
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "SOURCE_URL CHARACTER VARYING(600)": "'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJ... (30067)"; SQL statement:
+insert into contents (ai_generated,ai_probability,captured_at,confidence,content_type,created_at,creator_name,detail_summary,explanation,fake_content,generated_by,metadata,provider,rag_answer,rag_sources,result,scan_signals,source_location,source_platform,source_url,text,trust_score,truth_label,user_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,default) [22001-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:518) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.message.DbException.getValueTooLongException(DbException.java:334) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.value.Value.getValueTooLongException(Value.java:2617) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.value.Value.convertToVarchar(Value.java:1292) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.value.Value.convertTo(Value.java:1148) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.value.Value.convertForAssignTo(Value.java:1123) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:410) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.table.Table.convertInsertRow(Table.java:948) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.dml.Insert.insertRows(Insert.java:167) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.dml.Insert.update(Insert.java:135) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:212) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.Command.executeUpdate(Command.java:306) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.Command.executeUpdate(Command.java:250) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:213) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:172) ~[h2-2.4.240.jar:2.4.240]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-7.0.2.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:181) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:103) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:45) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:66) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:180) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:120) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:84) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:85) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:667) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:270) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:371) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:285) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:215) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:133) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:145) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:89) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:73) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:49) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:689) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:672) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:317) ~[spring-orm-7.0.3.jar:7.0.3]
+	at jdk.proxy4/jdk.proxy4.$Proxy127.persist(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:664) ~[spring-data-jpa-4.0.2.jar:4.0.2]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:278) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:169) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:545) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:290) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:690) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:171) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:146) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:135) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:166) ~[spring-data-jpa-4.0.2.jar:4.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:222) ~[spring-aop-7.0.3.jar:7.0.3]
+	at jdk.proxy4/jdk.proxy4.$Proxy139.save(Unknown Source) ~[na:na]
+	at com.Abhishekkashyap.AI_trust_Score_System.controller.ContentController.persistContent(ContentController.java:460) ~[classes/:na]
+	at com.Abhishekkashyap.AI_trust_Score_System.controller.ContentController.analyzeUrl(ContentController.java:344) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:371) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at com.Abhishekkashyap.AI_trust_Score_System.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:56) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317) ~[spring-security-config-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+
+2026-05-01T13:48:04.060+05:30  INFO 9892 --- [nio-8080-exec-9] c.A.A.service.ContentAnalysisService     : Score breakdown: userId=sagarmehla13@gmail.com, textLength=24, type=PHOTO, baseScore=22, signalRisk=23, multimodalRisk=34, forensicsScore=20, aiScore=25, advancedRisk=21, combinedScore=23, fakeLikelihood=14, strongFakeSignal=false, aiGenerated=true, fakeContent=false, alignedScore=70
+2026-05-01T13:48:04.060+05:30  INFO 9892 --- [nio-8080-exec-9] c.A.A.service.ContentAnalysisService     : Formula: aiScore=25, textPatternRisk=0, textClassifierRisk=0, advancedRisk=21 => combinedScore=round(aiScore*0.6+advancedRisk*0.4)=23
+Hibernate: insert into contents (ai_generated,ai_probability,captured_at,confidence,content_type,created_at,creator_name,detail_summary,explanation,fake_content,generated_by,metadata,provider,rag_answer,rag_sources,result,scan_signals,source_location,source_platform,source_url,text,trust_score,truth_label,user_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,default)
+2026-05-01T13:48:04.093+05:30  WARN 9892 --- [nio-8080-exec-9] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 22001, SQLState: 22001
+2026-05-01T13:48:04.093+05:30  WARN 9892 --- [nio-8080-exec-9] org.hibernate.orm.jdbc.error             : Value too long for column "SOURCE_URL CHARACTER VARYING(600)": "'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJ... (30067)"; SQL statement:
+insert into contents (ai_generated,ai_probability,captured_at,confidence,content_type,created_at,creator_name,detail_summary,explanation,fake_content,generated_by,metadata,provider,rag_answer,rag_sources,result,scan_signals,source_location,source_platform,source_url,text,trust_score,truth_label,user_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,default) [22001-240]
+2026-05-01T13:48:04.093+05:30 ERROR 9892 --- [nio-8080-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Value too long for column "SOURCE_URL CHARACTER VARYING(600)": "'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJ... (30067)"; SQL statement:
+insert into contents (ai_generated,ai_probability,captured_at,confidence,content_type,created_at,creator_name,detail_summary,explanation,fake_content,generated_by,metadata,provider,rag_answer,rag_sources,result,scan_signals,source_location,source_platform,source_url,text,trust_score,truth_label,user_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,default) [22001-240]] [insert into contents (ai_generated,ai_probability,captured_at,confidence,content_type,created_at,creator_name,detail_summary,explanation,fake_content,generated_by,metadata,provider,rag_answer,rag_sources,result,scan_signals,source_location,source_platform,source_url,text,trust_score,truth_label,user_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,default)]; SQL [insert into contents (ai_generated,ai_probability,captured_at,confidence,content_type,created_at,creator_name,detail_summary,explanation,fake_content,generated_by,metadata,provider,rag_answer,rag_sources,result,scan_signals,source_location,source_platform,source_url,text,trust_score,truth_label,user_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,default)]] with root cause
+
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "SOURCE_URL CHARACTER VARYING(600)": "'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJ... (30067)"; SQL statement:
+insert into contents (ai_generated,ai_probability,captured_at,confidence,content_type,created_at,creator_name,detail_summary,explanation,fake_content,generated_by,metadata,provider,rag_answer,rag_sources,result,scan_signals,source_location,source_platform,source_url,text,trust_score,truth_label,user_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,default) [22001-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:518) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.message.DbException.getValueTooLongException(DbException.java:334) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.value.Value.getValueTooLongException(Value.java:2617) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.value.Value.convertToVarchar(Value.java:1292) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.value.Value.convertTo(Value.java:1148) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.value.Value.convertForAssignTo(Value.java:1123) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:410) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.table.Table.convertInsertRow(Table.java:948) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.dml.Insert.insertRows(Insert.java:167) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.dml.Insert.update(Insert.java:135) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:212) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.Command.executeUpdate(Command.java:306) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.Command.executeUpdate(Command.java:250) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:213) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:172) ~[h2-2.4.240.jar:2.4.240]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-7.0.2.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:181) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:103) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:45) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:66) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:180) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:120) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:84) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:85) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:667) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:270) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:371) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:285) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:215) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:133) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:145) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:89) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:73) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:49) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:689) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:672) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:317) ~[spring-orm-7.0.3.jar:7.0.3]
+	at jdk.proxy4/jdk.proxy4.$Proxy127.persist(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:664) ~[spring-data-jpa-4.0.2.jar:4.0.2]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:278) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:169) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:545) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:290) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:690) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:171) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:146) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:135) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:166) ~[spring-data-jpa-4.0.2.jar:4.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:222) ~[spring-aop-7.0.3.jar:7.0.3]
+	at jdk.proxy4/jdk.proxy4.$Proxy139.save(Unknown Source) ~[na:na]
+	at com.Abhishekkashyap.AI_trust_Score_System.controller.ContentController.persistContent(ContentController.java:460) ~[classes/:na]
+	at com.Abhishekkashyap.AI_trust_Score_System.controller.ContentController.analyzeUrl(ContentController.java:344) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:371) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at com.Abhishekkashyap.AI_trust_Score_System.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:56) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317) ~[spring-security-config-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+
+2026-05-01T13:48:33.603+05:30  INFO 9892 --- [nio-8080-exec-5] c.A.A.service.ContentAnalysisService     : Score breakdown: userId=sagarmehla13@gmail.com, textLength=24, type=PHOTO, baseScore=22, signalRisk=23, multimodalRisk=34, forensicsScore=20, aiScore=25, advancedRisk=21, combinedScore=23, fakeLikelihood=14, strongFakeSignal=false, aiGenerated=true, fakeContent=false, alignedScore=70
+2026-05-01T13:48:33.626+05:30  INFO 9892 --- [nio-8080-exec-5] c.A.A.service.ContentAnalysisService     : Formula: aiScore=25, textPatternRisk=0, textClassifierRisk=0, advancedRisk=21 => combinedScore=round(aiScore*0.6+advancedRisk*0.4)=23
+Hibernate: insert into contents (ai_generated,ai_probability,captured_at,confidence,content_type,created_at,creator_name,detail_summary,explanation,fake_content,generated_by,metadata,provider,rag_answer,rag_sources,result,scan_signals,source_location,source_platform,source_url,text,trust_score,truth_label,user_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,default)
+2026-05-01T13:48:33.642+05:30  WARN 9892 --- [nio-8080-exec-5] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 22001, SQLState: 22001
+2026-05-01T13:48:33.642+05:30  WARN 9892 --- [nio-8080-exec-5] org.hibernate.orm.jdbc.error             : Value too long for column "SOURCE_URL CHARACTER VARYING(600)": "'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJ... (30067)"; SQL statement:
+insert into contents (ai_generated,ai_probability,captured_at,confidence,content_type,created_at,creator_name,detail_summary,explanation,fake_content,generated_by,metadata,provider,rag_answer,rag_sources,result,scan_signals,source_location,source_platform,source_url,text,trust_score,truth_label,user_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,default) [22001-240]
+2026-05-01T13:48:33.642+05:30 ERROR 9892 --- [nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Value too long for column "SOURCE_URL CHARACTER VARYING(600)": "'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJ... (30067)"; SQL statement:
+insert into contents (ai_generated,ai_probability,captured_at,confidence,content_type,created_at,creator_name,detail_summary,explanation,fake_content,generated_by,metadata,provider,rag_answer,rag_sources,result,scan_signals,source_location,source_platform,source_url,text,trust_score,truth_label,user_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,default) [22001-240]] [insert into contents (ai_generated,ai_probability,captured_at,confidence,content_type,created_at,creator_name,detail_summary,explanation,fake_content,generated_by,metadata,provider,rag_answer,rag_sources,result,scan_signals,source_location,source_platform,source_url,text,trust_score,truth_label,user_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,default)]; SQL [insert into contents (ai_generated,ai_probability,captured_at,confidence,content_type,created_at,creator_name,detail_summary,explanation,fake_content,generated_by,metadata,provider,rag_answer,rag_sources,result,scan_signals,source_location,source_platform,source_url,text,trust_score,truth_label,user_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,default)]] with root cause
+
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "SOURCE_URL CHARACTER VARYING(600)": "'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJ... (30067)"; SQL statement:
+insert into contents (ai_generated,ai_probability,captured_at,confidence,content_type,created_at,creator_name,detail_summary,explanation,fake_content,generated_by,metadata,provider,rag_answer,rag_sources,result,scan_signals,source_location,source_platform,source_url,text,trust_score,truth_label,user_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,default) [22001-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:518) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.message.DbException.getValueTooLongException(DbException.java:334) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.value.Value.getValueTooLongException(Value.java:2617) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.value.Value.convertToVarchar(Value.java:1292) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.value.Value.convertTo(Value.java:1148) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.value.Value.convertForAssignTo(Value.java:1123) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:410) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.table.Table.convertInsertRow(Table.java:948) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.dml.Insert.insertRows(Insert.java:167) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.dml.Insert.update(Insert.java:135) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:212) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.Command.executeUpdate(Command.java:306) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.Command.executeUpdate(Command.java:250) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:213) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:172) ~[h2-2.4.240.jar:2.4.240]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-7.0.2.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:181) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:103) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:45) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:66) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:180) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:120) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:84) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:85) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:667) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:270) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:371) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:285) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:215) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:133) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:145) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:89) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:73) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:49) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:689) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:672) ~[hibernate-core-7.2.1.Final.jar:7.2.1.Final]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:317) ~[spring-orm-7.0.3.jar:7.0.3]
+	at jdk.proxy4/jdk.proxy4.$Proxy127.persist(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:664) ~[spring-data-jpa-4.0.2.jar:4.0.2]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:278) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:169) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:545) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:290) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:690) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:171) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:146) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69) ~[spring-data-commons-4.0.2.jar:4.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:135) ~[spring-tx-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:166) ~[spring-data-jpa-4.0.2.jar:4.0.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.3.jar:7.0.3]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:222) ~[spring-aop-7.0.3.jar:7.0.3]
+	at jdk.proxy4/jdk.proxy4.$Proxy139.save(Unknown Source) ~[na:na]
+	at com.Abhishekkashyap.AI_trust_Score_System.controller.ContentController.persistContent(ContentController.java:460) ~[classes/:na]
+	at com.Abhishekkashyap.AI_trust_Score_System.controller.ContentController.analyzeUrl(ContentController.java:344) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.3.jar:7.0.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:371) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at com.Abhishekkashyap.AI_trust_Score_System.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:56) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317) ~[spring-security-config-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+
+2026-05-01T13:49:38.180+05:30  INFO 9892 --- [nio-8080-exec-1] c.A.A.service.ContentAnalysisService     : Score breakdown: userId=sagarmehla13@gmail.com, textLength=39, type=PHOTO, baseScore=18, signalRisk=23, multimodalRisk=26, forensicsScore=20, aiScore=21, advancedRisk=23, combinedScore=22, fakeLikelihood=17, strongFakeSignal=false, aiGenerated=true, fakeContent=false, alignedScore=70
+2026-05-01T13:49:38.199+05:30  INFO 9892 --- [nio-8080-exec-1] c.A.A.service.ContentAnalysisService     : Formula: aiScore=21, textPatternRisk=0, textClassifierRisk=0, advancedRisk=23 => combinedScore=round(aiScore*0.6+advancedRisk*0.4)=22
+Hibernate: insert into contents (ai_generated,ai_probability,captured_at,confidence,content_type,created_at,creator_name,detail_summary,explanation,fake_content,generated_by,metadata,provider,rag_answer,rag_sources,result,scan_signals,source_location,source_platform,source_url,text,trust_score,truth_label,user_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into audit_logs (action,created_at,details,user_id,id) values (?,?,?,?,default)
+Hibernate: insert into audit_logs (action,created_at,details,user_id,id) values (?,?,?,?,default)
+Hibernate: select c1_0.id,c1_0.ai_generated,c1_0.ai_probability,c1_0.captured_at,c1_0.confidence,c1_0.content_type,c1_0.created_at,c1_0.creator_name,c1_0.detail_summary,c1_0.explanation,c1_0.fake_content,c1_0.generated_by,c1_0.metadata,c1_0.provider,c1_0.rag_answer,c1_0.rag_sources,c1_0.result,c1_0.scan_signals,c1_0.source_location,c1_0.source_platform,c1_0.source_url,c1_0.text,c1_0.trust_score,c1_0.truth_label,c1_0.user_id from contents c1_0 where c1_0.user_id=? order by c1_0.created_at desc
+2026-05-01T13:51:30.098+05:30  INFO 9892 --- [nio-8080-exec-4] c.A.A.service.ContentAnalysisService     : Score breakdown: userId=sagarmehla13@gmail.com, textLength=39, type=PHOTO, baseScore=22, signalRisk=11, multimodalRisk=23, forensicsScore=10, aiScore=19, advancedRisk=23, combinedScore=21, fakeLikelihood=16, strongFakeSignal=false, aiGenerated=true, fakeContent=false, alignedScore=70
+2026-05-01T13:51:30.131+05:30  INFO 9892 --- [nio-8080-exec-4] c.A.A.service.ContentAnalysisService     : Formula: aiScore=19, textPatternRisk=0, textClassifierRisk=0, advancedRisk=23 => combinedScore=round(aiScore*0.6+advancedRisk*0.4)=21
+Hibernate: insert into contents (ai_generated,ai_probability,captured_at,confidence,content_type,created_at,creator_name,detail_summary,explanation,fake_content,generated_by,metadata,provider,rag_answer,rag_sources,result,scan_signals,source_location,source_platform,source_url,text,trust_score,truth_label,user_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into audit_logs (action,created_at,details,user_id,id) values (?,?,?,?,default)
+Hibernate: insert into audit_logs (action,created_at,details,user_id,id) values (?,?,?,?,default)
+Hibernate: select c1_0.id,c1_0.ai_generated,c1_0.ai_probability,c1_0.captured_at,c1_0.confidence,c1_0.content_type,c1_0.created_at,c1_0.creator_name,c1_0.detail_summary,c1_0.explanation,c1_0.fake_content,c1_0.generated_by,c1_0.metadata,c1_0.provider,c1_0.rag_answer,c1_0.rag_sources,c1_0.result,c1_0.scan_signals,c1_0.source_location,c1_0.source_platform,c1_0.source_url,c1_0.text,c1_0.trust_score,c1_0.truth_label,c1_0.user_id from contents c1_0 where c1_0.user_id=? order by c1_0.created_at desc
+Hibernate: select c1_0.id,c1_0.ai_generated,c1_0.ai_probability,c1_0.captured_at,c1_0.confidence,c1_0.content_type,c1_0.created_at,c1_0.creator_name,c1_0.detail_summary,c1_0.explanation,c1_0.fake_content,c1_0.generated_by,c1_0.metadata,c1_0.provider,c1_0.rag_answer,c1_0.rag_sources,c1_0.result,c1_0.scan_signals,c1_0.source_location,c1_0.source_platform,c1_0.source_url,c1_0.text,c1_0.trust_score,c1_0.truth_label,c1_0.user_id from contents c1_0 where c1_0.user_id=? order by c1_0.created_at desc
+Hibernate: select ua1_0.id,ua1_0.created_at,ua1_0.first_name,ua1_0.last_name,ua1_0.password_hash,ua1_0.role,ua1_0.user_id from user_accounts ua1_0 where upper(ua1_0.user_id)=upper(?)
+Hibernate: select c1_0.id,c1_0.ai_generated,c1_0.ai_probability,c1_0.captured_at,c1_0.confidence,c1_0.content_type,c1_0.created_at,c1_0.creator_name,c1_0.detail_summary,c1_0.explanation,c1_0.fake_content,c1_0.generated_by,c1_0.metadata,c1_0.provider,c1_0.rag_answer,c1_0.rag_sources,c1_0.result,c1_0.scan_signals,c1_0.source_location,c1_0.source_platform,c1_0.source_url,c1_0.text,c1_0.trust_score,c1_0.truth_label,c1_0.user_id from contents c1_0 where c1_0.user_id=? order by c1_0.created_at desc
+Hibernate: select c1_0.id,c1_0.ai_generated,c1_0.ai_probability,c1_0.captured_at,c1_0.confidence,c1_0.content_type,c1_0.created_at,c1_0.creator_name,c1_0.detail_summary,c1_0.explanation,c1_0.fake_content,c1_0.generated_by,c1_0.metadata,c1_0.provider,c1_0.rag_answer,c1_0.rag_sources,c1_0.result,c1_0.scan_signals,c1_0.source_location,c1_0.source_platform,c1_0.source_url,c1_0.text,c1_0.trust_score,c1_0.truth_label,c1_0.user_id from contents c1_0 where c1_0.user_id=? order by c1_0.created_at desc
+Hibernate: select ua1_0.id,ua1_0.created_at,ua1_0.first_name,ua1_0.last_name,ua1_0.password_hash,ua1_0.role,ua1_0.user_id from user_accounts ua1_0 where upper(ua1_0.user_id)=upper(?)
+Hibernate: select c1_0.id,c1_0.ai_generated,c1_0.ai_probability,c1_0.captured_at,c1_0.confidence,c1_0.content_type,c1_0.created_at,c1_0.creator_name,c1_0.detail_summary,c1_0.explanation,c1_0.fake_content,c1_0.generated_by,c1_0.metadata,c1_0.provider,c1_0.rag_answer,c1_0.rag_sources,c1_0.result,c1_0.scan_signals,c1_0.source_location,c1_0.source_platform,c1_0.source_url,c1_0.text,c1_0.trust_score,c1_0.truth_label,c1_0.user_id from contents c1_0 where c1_0.user_id=? order by c1_0.created_at desc
+2026-05-01T13:53:13.984+05:30  INFO 9892 --- [nio-8080-exec-6] c.A.A.service.ContentAnalysisService     : Score breakdown: userId=sagarmehla13@gmail.com, textLength=18, type=PHOTO, baseScore=22, signalRisk=11, multimodalRisk=23, forensicsScore=10, aiScore=19, advancedRisk=23, combinedScore=21, fakeLikelihood=16, strongFakeSignal=false, aiGenerated=true, fakeContent=false, alignedScore=70
+2026-05-01T13:53:14.016+05:30  INFO 9892 --- [nio-8080-exec-6] c.A.A.service.ContentAnalysisService     : Formula: aiScore=19, textPatternRisk=0, textClassifierRisk=0, advancedRisk=23 => combinedScore=round(aiScore*0.6+advancedRisk*0.4)=21
+Hibernate: insert into contents (ai_generated,ai_probability,captured_at,confidence,content_type,created_at,creator_name,detail_summary,explanation,fake_content,generated_by,metadata,provider,rag_answer,rag_sources,result,scan_signals,source_location,source_platform,source_url,text,trust_score,truth_label,user_id,id) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into audit_logs (action,created_at,details,user_id,id) values (?,?,?,?,default)
+Hibernate: insert into audit_logs (action,created_at,details,user_id,id) values (?,?,?,?,default)
+Hibernate: select c1_0.id,c1_0.ai_generated,c1_0.ai_probability,c1_0.captured_at,c1_0.confidence,c1_0.content_type,c1_0.created_at,c1_0.creator_name,c1_0.detail_summary,c1_0.explanation,c1_0.fake_content,c1_0.generated_by,c1_0.metadata,c1_0.provider,c1_0.rag_answer,c1_0.rag_sources,c1_0.result,c1_0.scan_signals,c1_0.source_location,c1_0.source_platform,c1_0.source_url,c1_0.text,c1_0.trust_score,c1_0.truth_label,c1_0.user_id from contents c1_0 where c1_0.user_id=? order by c1_0.created_at desc
+Hibernate: select c1_0.id,c1_0.ai_generated,c1_0.ai_probability,c1_0.captured_at,c1_0.confidence,c1_0.content_type,c1_0.created_at,c1_0.creator_name,c1_0.detail_summary,c1_0.explanation,c1_0.fake_content,c1_0.generated_by,c1_0.metadata,c1_0.provider,c1_0.rag_answer,c1_0.rag_sources,c1_0.result,c1_0.scan_signals,c1_0.source_location,c1_0.source_platform,c1_0.source_url,c1_0.text,c1_0.trust_score,c1_0.truth_label,c1_0.user_id from contents c1_0 where c1_0.user_id=? order by c1_0.created_at desc
+Hibernate: select ua1_0.id,ua1_0.created_at,ua1_0.first_name,ua1_0.last_name,ua1_0.password_hash,ua1_0.role,ua1_0.user_id from user_accounts ua1_0 where upper(ua1_0.user_id)=upper(?)
+2026-05-01T14:22:54.735+05:30  INFO 9892 --- [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-05-01T14:22:54.743+05:30  INFO 9892 --- [       Thread-1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-01T14:22:54.752+05:30  INFO 9892 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-01T14:22:54.760+05:30  INFO 9892 --- [       Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-01T14:22:54.771+05:30  INFO 9892 --- [       Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-01T14:22:54.797+05:30  INFO 9892 --- [       Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.2)
+
+2026-05-01T14:22:54.925+05:30  INFO 9892 --- [  restartedMain] c.A.A.AiTrustScoreSystemApplication      : Starting AiTrustScoreSystemApplication using Java 25.0.1 with PID 9892 (D:\minor proj\AI-trust-Score-System\AI-trust-Score-System\target\classes started by abhis in D:\minor proj\AI-trust-Score-System\AI-trust-Score-System)
+2026-05-01T14:22:54.926+05:30  INFO 9892 --- [  restartedMain] c.A.A.AiTrustScoreSystemApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-05-01T14:22:55.438+05:30  INFO 9892 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-01T14:22:55.496+05:30  INFO 9892 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 7 JPA repository interfaces.
+2026-05-01T14:22:55.750+05:30  INFO 9892 --- [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-05-01T14:22:55.753+05:30  INFO 9892 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-01T14:22:55.754+05:30  INFO 9892 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-05-01T14:22:55.799+05:30  INFO 9892 --- [  restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 868 ms
+2026-05-01T14:22:55.879+05:30  INFO 9892 --- [  restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-01T14:22:55.936+05:30  INFO 9892 --- [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-01T14:22:55.938+05:30  INFO 9892 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-05-01T14:22:56.014+05:30  INFO 9892 --- [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn27: url=jdbc:h2:file:./data/trustdb user=SA
+2026-05-01T14:22:56.015+05:30  INFO 9892 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-05-01T14:22:56.017+05:30  INFO 9892 --- [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./data/trustdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TRUSTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-01T14:22:56.246+05:30  INFO 9892 --- [  restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-01T14:22:56.253+05:30  INFO 9892 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-01T14:22:56.481+05:30  INFO 9892 --- [  restartedMain] c.A.A.service.TextClassifierService      : Text classifier ready from D:\minor proj\AI-trust-Score-System\AI-trust-Score-System\tools\training\artifacts\text\text_classifier.json
+2026-05-01T14:22:58.076+05:30  WARN 9892 --- [  restartedMain] c.A.A.service.RagService                 : Embedding index build skipped: Embeddings HTTP 429
+2026-05-01T14:22:58.079+05:30  INFO 9892 --- [  restartedMain] c.A.A.service.RagService                 : RAG index ready. chunks=7, docs=7, dir=D:\minor proj\AI-trust-Score-System\AI-trust-Score-System\data\rag, embeddings=false
+2026-05-01T14:22:58.086+05:30  INFO 9892 --- [  restartedMain] c.A.A.service.FusionCalibratorService    : Fusion calibration ready from D:\minor proj\AI-trust-Score-System\AI-trust-Score-System\tools\training\artifacts\fusion\fusion_calibration.json
+2026-05-01T14:22:58.279+05:30  WARN 9892 --- [  restartedMain] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d5cb4780-135d-4284-9436-7c5acfd9f02d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-01T14:22:58.281+05:30  INFO 9892 --- [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-01T14:22:58.350+05:30  INFO 9892 --- [  restartedMain] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
+2026-05-01T14:22:58.506+05:30  INFO 9892 --- [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-05-01T14:22:58.510+05:30  INFO 9892 --- [  restartedMain] c.A.A.AiTrustScoreSystemApplication      : Started AiTrustScoreSystemApplication in 3.639 seconds (process running for 3168.018)
+2026-05-01T14:22:58.513+05:30  INFO 9892 --- [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-01T14:22:59.892+05:30  INFO 9892 --- [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 67 class path changes (0 additions, 0 deletions, 67 modifications)
+2026-05-01T14:22:59.894+05:30  INFO 9892 --- [       Thread-7] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-01T14:22:59.905+05:30  INFO 9892 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-01T14:22:59.909+05:30  INFO 9892 --- [       Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-01T14:22:59.911+05:30  INFO 9892 --- [       Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-05-01T14:22:59.982+05:30  INFO 9892 --- [       Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.2)
+
+2026-05-01T14:23:00.085+05:30  INFO 9892 --- [  restartedMain] c.A.A.AiTrustScoreSystemApplication      : Starting AiTrustScoreSystemApplication using Java 25.0.1 with PID 9892 (D:\minor proj\AI-trust-Score-System\AI-trust-Score-System\target\classes started by abhis in D:\minor proj\AI-trust-Score-System\AI-trust-Score-System)
+2026-05-01T14:23:00.085+05:30  INFO 9892 --- [  restartedMain] c.A.A.AiTrustScoreSystemApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-05-01T14:23:00.489+05:30  INFO 9892 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-01T14:23:00.540+05:30  INFO 9892 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 7 JPA repository interfaces.
+2026-05-01T14:23:00.764+05:30  INFO 9892 --- [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-05-01T14:23:00.765+05:30  INFO 9892 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-01T14:23:00.766+05:30  INFO 9892 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-05-01T14:23:00.813+05:30  INFO 9892 --- [  restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 725 ms
+2026-05-01T14:23:00.898+05:30  INFO 9892 --- [  restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-01T14:23:00.954+05:30  INFO 9892 --- [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-01T14:23:00.957+05:30  INFO 9892 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-05-01T14:23:00.999+05:30  INFO 9892 --- [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn37: url=jdbc:h2:file:./data/trustdb user=SA
+2026-05-01T14:23:01.000+05:30  INFO 9892 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-05-01T14:23:01.009+05:30  INFO 9892 --- [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./data/trustdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.2.224
+	Default catalog/schema: TRUSTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-01T14:23:01.176+05:30  INFO 9892 --- [  restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-01T14:23:01.188+05:30  INFO 9892 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-01T14:23:01.409+05:30  INFO 9892 --- [  restartedMain] c.A.A.service.TextClassifierService      : Text classifier ready from D:\minor proj\AI-trust-Score-System\AI-trust-Score-System\tools\training\artifacts\text\text_classifier.json
+2026-05-01T14:23:01.784+05:30  WARN 9892 --- [  restartedMain] c.A.A.service.RagService                 : Embedding index build skipped: Embeddings HTTP 429
+2026-05-01T14:23:01.787+05:30  INFO 9892 --- [  restartedMain] c.A.A.service.RagService                 : RAG index ready. chunks=7, docs=7, dir=D:\minor proj\AI-trust-Score-System\AI-trust-Score-System\data\rag, embeddings=false
+2026-05-01T14:23:01.795+05:30  INFO 9892 --- [  restartedMain] c.A.A.service.FusionCalibratorService    : Fusion calibration ready from D:\minor proj\AI-trust-Score-System\AI-trust-Score-System\tools\training\artifacts\fusion\fusion_calibration.json
+2026-05-01T14:23:01.982+05:30  WARN 9892 --- [  restartedMain] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c90f3f76-d798-42e6-8377-4e0848b2c751
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-01T14:23:01.984+05:30  INFO 9892 --- [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-01T14:23:02.040+05:30  INFO 9892 --- [  restartedMain] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
+2026-05-01T14:23:02.164+05:30  INFO 9892 --- [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-05-01T14:23:02.166+05:30  INFO 9892 --- [  restartedMain] c.A.A.AiTrustScoreSystemApplication      : Started AiTrustScoreSystemApplication in 2.124 seconds (process running for 3171.674)
+2026-05-01T14:23:02.168+05:30  INFO 9892 --- [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-01T14:23:43.281+05:30  INFO 9892 --- [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-05-01T14:23:43.303+05:30  INFO 9892 --- [      Thread-12] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-01T14:23:43.310+05:30  INFO 9892 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-01T14:23:43.313+05:30  INFO 9892 --- [      Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-01T14:23:43.314+05:30  INFO 9892 --- [      Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-05-01T14:23:44.043+05:30  INFO 9892 --- [      Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.2)
+
+2026-05-01T14:23:44.129+05:30  INFO 9892 --- [  restartedMain] c.A.A.AiTrustScoreSystemApplication      : Starting AiTrustScoreSystemApplication using Java 25.0.1 with PID 9892 (D:\minor proj\AI-trust-Score-System\AI-trust-Score-System\target\classes started by abhis in D:\minor proj\AI-trust-Score-System\AI-trust-Score-System)
+2026-05-01T14:23:44.130+05:30  INFO 9892 --- [  restartedMain] c.A.A.AiTrustScoreSystemApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-05-01T14:23:44.563+05:30  INFO 9892 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-01T14:23:44.628+05:30  INFO 9892 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 7 JPA repository interfaces.
+2026-05-01T14:23:44.834+05:30  INFO 9892 --- [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-05-01T14:23:44.845+05:30  INFO 9892 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-01T14:23:44.846+05:30  INFO 9892 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-05-01T14:23:44.898+05:30  INFO 9892 --- [  restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 765 ms
+2026-05-01T14:23:44.980+05:30  INFO 9892 --- [  restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-01T14:23:45.040+05:30  INFO 9892 --- [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-01T14:23:45.040+05:30  INFO 9892 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-05-01T14:23:45.066+05:30  INFO 9892 --- [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection conn57: url=jdbc:h2:file:./data/trustdb user=SA
+2026-05-01T14:23:45.066+05:30  INFO 9892 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-05-01T14:23:45.076+05:30  INFO 9892 --- [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./data/trustdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.2.224
+	Default catalog/schema: TRUSTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-01T14:23:45.228+05:30  INFO 9892 --- [  restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-01T14:23:45.235+05:30  INFO 9892 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-01T14:23:45.410+05:30  INFO 9892 --- [  restartedMain] c.A.A.service.TextClassifierService      : Text classifier ready from D:\minor proj\AI-trust-Score-System\AI-trust-Score-System\tools\training\artifacts\text\text_classifier.json
+2026-05-01T14:23:45.773+05:30  WARN 9892 --- [  restartedMain] c.A.A.service.RagService                 : Embedding index build skipped: Embeddings HTTP 429
+2026-05-01T14:23:45.776+05:30  INFO 9892 --- [  restartedMain] c.A.A.service.RagService                 : RAG index ready. chunks=7, docs=7, dir=D:\minor proj\AI-trust-Score-System\AI-trust-Score-System\data\rag, embeddings=false
+2026-05-01T14:23:45.780+05:30  INFO 9892 --- [  restartedMain] c.A.A.service.FusionCalibratorService    : Fusion calibration ready from D:\minor proj\AI-trust-Score-System\AI-trust-Score-System\tools\training\artifacts\fusion\fusion_calibration.json
+2026-05-01T14:23:46.006+05:30  WARN 9892 --- [  restartedMain] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a622499c-160b-45d8-8e12-954335409d07
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-01T14:23:46.028+05:30  INFO 9892 --- [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-01T14:23:46.140+05:30  INFO 9892 --- [  restartedMain] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
+2026-05-01T14:23:46.350+05:30  INFO 9892 --- [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-05-01T14:23:46.355+05:30  INFO 9892 --- [  restartedMain] c.A.A.AiTrustScoreSystemApplication      : Started AiTrustScoreSystemApplication in 2.266 seconds (process running for 3215.863)
+2026-05-01T14:23:46.356+05:30  INFO 9892 --- [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-01T14:23:56.910+05:30  INFO 9892 --- [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-05-01T14:23:56.928+05:30  INFO 9892 --- [      Thread-16] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-01T14:23:56.942+05:30  INFO 9892 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-01T14:23:56.945+05:30  INFO 9892 --- [      Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-01T14:23:56.946+05:30  INFO 9892 --- [      Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2026-05-01T14:23:57.704+05:30  INFO 9892 --- [      Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.2)
+
+2026-05-01T14:23:57.799+05:30  INFO 9892 --- [  restartedMain] c.A.A.AiTrustScoreSystemApplication      : Starting AiTrustScoreSystemApplication using Java 25.0.1 with PID 9892 (D:\minor proj\AI-trust-Score-System\AI-trust-Score-System\target\classes started by abhis in D:\minor proj\AI-trust-Score-System\AI-trust-Score-System)
+2026-05-01T14:23:57.800+05:30  INFO 9892 --- [  restartedMain] c.A.A.AiTrustScoreSystemApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-05-01T14:23:58.228+05:30  INFO 9892 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-01T14:23:58.290+05:30  INFO 9892 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 7 JPA repository interfaces.
+2026-05-01T14:23:58.480+05:30  INFO 9892 --- [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9090 (http)
+2026-05-01T14:23:58.481+05:30  INFO 9892 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-01T14:23:58.482+05:30  INFO 9892 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-05-01T14:23:58.530+05:30  INFO 9892 --- [  restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 728 ms
+2026-05-01T14:23:58.612+05:30  INFO 9892 --- [  restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-01T14:23:58.677+05:30  INFO 9892 --- [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-01T14:23:58.678+05:30  INFO 9892 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2026-05-01T14:23:58.701+05:30  INFO 9892 --- [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection conn77: url=jdbc:h2:file:./data/trustdb user=SA
+2026-05-01T14:23:58.702+05:30  INFO 9892 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2026-05-01T14:23:58.711+05:30  INFO 9892 --- [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./data/trustdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.2.224
+	Default catalog/schema: TRUSTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-01T14:23:58.851+05:30  INFO 9892 --- [  restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-01T14:23:58.857+05:30  INFO 9892 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-01T14:23:59.030+05:30  INFO 9892 --- [  restartedMain] c.A.A.service.TextClassifierService      : Text classifier ready from D:\minor proj\AI-trust-Score-System\AI-trust-Score-System\tools\training\artifacts\text\text_classifier.json
+2026-05-01T14:23:59.421+05:30  WARN 9892 --- [  restartedMain] c.A.A.service.RagService                 : Embedding index build skipped: Embeddings HTTP 429
+2026-05-01T14:23:59.429+05:30  INFO 9892 --- [  restartedMain] c.A.A.service.RagService                 : RAG index ready. chunks=7, docs=7, dir=D:\minor proj\AI-trust-Score-System\AI-trust-Score-System\data\rag, embeddings=false
+2026-05-01T14:23:59.434+05:30  INFO 9892 --- [  restartedMain] c.A.A.service.FusionCalibratorService    : Fusion calibration ready from D:\minor proj\AI-trust-Score-System\AI-trust-Score-System\tools\training\artifacts\fusion\fusion_calibration.json
+2026-05-01T14:23:59.666+05:30  WARN 9892 --- [  restartedMain] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 09629ff4-c31e-4979-99b6-9f973bc632c6
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-01T14:23:59.667+05:30  INFO 9892 --- [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-01T14:23:59.749+05:30  INFO 9892 --- [  restartedMain] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
+2026-05-01T14:23:59.915+05:30  INFO 9892 --- [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9090 (http) with context path '/'
+2026-05-01T14:23:59.918+05:30  INFO 9892 --- [  restartedMain] c.A.A.AiTrustScoreSystemApplication      : Started AiTrustScoreSystemApplication in 2.165 seconds (process running for 3229.427)
+2026-05-01T14:23:59.922+05:30  INFO 9892 --- [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-01T14:24:15.594+05:30  INFO 9892 --- [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-05-01T14:24:15.614+05:30  INFO 9892 --- [      Thread-50] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-01T14:24:15.625+05:30  INFO 9892 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-01T14:24:15.627+05:30  INFO 9892 --- [      Thread-50] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-01T14:24:15.629+05:30  INFO 9892 --- [      Thread-50] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2026-05-01T14:24:16.352+05:30  INFO 9892 --- [      Thread-50] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.2)
+
+2026-05-01T14:24:16.446+05:30  INFO 9892 --- [  restartedMain] c.A.A.AiTrustScoreSystemApplication      : Starting AiTrustScoreSystemApplication using Java 25.0.1 with PID 9892 (D:\minor proj\AI-trust-Score-System\AI-trust-Score-System\target\classes started by abhis in D:\minor proj\AI-trust-Score-System\AI-trust-Score-System)
+2026-05-01T14:24:16.447+05:30  INFO 9892 --- [  restartedMain] c.A.A.AiTrustScoreSystemApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-05-01T14:24:16.861+05:30  INFO 9892 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-01T14:24:16.920+05:30  INFO 9892 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 7 JPA repository interfaces.
+2026-05-01T14:24:17.116+05:30  INFO 9892 --- [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-05-01T14:24:17.117+05:30  INFO 9892 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-01T14:24:17.118+05:30  INFO 9892 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-05-01T14:24:17.172+05:30  INFO 9892 --- [  restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 721 ms
+2026-05-01T14:24:17.248+05:30  INFO 9892 --- [  restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-01T14:24:17.306+05:30  INFO 9892 --- [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-01T14:24:17.310+05:30  INFO 9892 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2026-05-01T14:24:17.340+05:30  INFO 9892 --- [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection conn97: url=jdbc:h2:file:./data/trustdb user=SA
+2026-05-01T14:24:17.341+05:30  INFO 9892 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2026-05-01T14:24:17.346+05:30  INFO 9892 --- [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./data/trustdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.2.224
+	Default catalog/schema: TRUSTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-01T14:24:17.430+05:30  INFO 9892 --- [  restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-01T14:24:17.437+05:30  INFO 9892 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-01T14:24:17.598+05:30  INFO 9892 --- [  restartedMain] c.A.A.service.TextClassifierService      : Text classifier ready from D:\minor proj\AI-trust-Score-System\AI-trust-Score-System\tools\training\artifacts\text\text_classifier.json
+2026-05-01T14:24:18.016+05:30  WARN 9892 --- [  restartedMain] c.A.A.service.RagService                 : Embedding index build skipped: Embeddings HTTP 429
+2026-05-01T14:24:18.038+05:30  INFO 9892 --- [  restartedMain] c.A.A.service.RagService                 : RAG index ready. chunks=7, docs=7, dir=D:\minor proj\AI-trust-Score-System\AI-trust-Score-System\data\rag, embeddings=false
+2026-05-01T14:24:18.047+05:30  INFO 9892 --- [  restartedMain] c.A.A.service.FusionCalibratorService    : Fusion calibration ready from D:\minor proj\AI-trust-Score-System\AI-trust-Score-System\tools\training\artifacts\fusion\fusion_calibration.json
+2026-05-01T14:24:18.283+05:30  WARN 9892 --- [  restartedMain] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6a0f6c46-3c73-4837-9e09-97fa815449b6
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-01T14:24:18.303+05:30  INFO 9892 --- [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-01T14:24:18.423+05:30  INFO 9892 --- [  restartedMain] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
+2026-05-01T14:24:18.626+05:30  INFO 9892 --- [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-05-01T14:24:18.629+05:30  INFO 9892 --- [  restartedMain] c.A.A.AiTrustScoreSystemApplication      : Started AiTrustScoreSystemApplication in 2.228 seconds (process running for 3248.138)
+2026-05-01T14:24:18.631+05:30  INFO 9892 --- [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-01T14:24:46.191+05:30  INFO 9892 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-01T14:24:46.211+05:30  INFO 9892 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-01T14:24:46.214+05:30  INFO 9892 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-05-01T14:24:46.215+05:30  WARN 9892 --- [nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+Hibernate: select ua1_0.id,ua1_0.created_at,ua1_0.first_name,ua1_0.last_name,ua1_0.password_hash,ua1_0.role,ua1_0.user_id from user_accounts ua1_0 where upper(ua1_0.user_id)=upper(?)
+Hibernate: insert into audit_logs (action,created_at,details,user_id,id) values (?,?,?,?,default)
+Hibernate: select ua1_0.id,ua1_0.created_at,ua1_0.first_name,ua1_0.last_name,ua1_0.password_hash,ua1_0.role,ua1_0.user_id from user_accounts ua1_0 where upper(ua1_0.user_id)=upper(?)
+Hibernate: select c1_0.id,c1_0.ai_generated,c1_0.ai_probability,c1_0.captured_at,c1_0.confidence,c1_0.content_type,c1_0.created_at,c1_0.creator_name,c1_0.detail_summary,c1_0.explanation,c1_0.fake_content,c1_0.generated_by,c1_0.metadata,c1_0.provider,c1_0.rag_answer,c1_0.rag_sources,c1_0.result,c1_0.scan_signals,c1_0.source_location,c1_0.source_platform,c1_0.source_url,c1_0.text,c1_0.trust_score,c1_0.truth_label,c1_0.user_id from contents c1_0 where c1_0.user_id=? order by c1_0.created_at desc
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  56:15 min
+[INFO] Finished at: 2026-05-01T14:26:23+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:4.0.2:run (default-cli) on project AI-trust-Score-System: Process terminated with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

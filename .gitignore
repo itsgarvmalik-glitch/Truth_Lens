@@ -1,0 +1,52 @@
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Local databases & run data
+data/
+tmp/
+
+# Logs & temp files
+*.log
+*.err.log
+*.pid
+run.log
+run-live.log
+run-live.err.log
+live-server.log
+live-server.err.log
+
+# Binary tools & python cache
+tools/yt-dlp.exe
+**/__pycache__/
+*.pyc
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
