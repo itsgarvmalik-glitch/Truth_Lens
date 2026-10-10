@@ -69,14 +69,13 @@ Visit [http://localhost:8080](http://localhost:8080) to access the TruthLens das
 Deploy the entire backend + UI live with a free public URL on [Render](https://render.com):
 
 1. Go to [Render Dashboard](https://dashboard.render.com/) and click **New +** $\rightarrow$ **Web Service**.
-2. Connect your GitHub repository: `ksp-Abhishek/Truthlens-with-Ai-Arena`.
-3. Configure the settings:
+2. Configure the settings:
    - **Name**: `truthlens-ai`
    - **Runtime**: `Docker` (or Java)
    - **Region**: Closest to you (e.g., Singapore / Frankfurt)
    - **Instance Type**: Free
-4. Click **Deploy Web Service**.
-5. Once built, you'll receive your live URL: `https://truthlens-ai.onrender.com`.
+3. Click **Deploy Web Service**.
+4. Once built, you'll receive your live URL: `https://truthlens-ai.onrender.com`.
 
 ---
 
