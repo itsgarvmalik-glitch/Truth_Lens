@@ -44,7 +44,7 @@ TruthLens with AI-Arena is an enterprise-grade content verification and trust sc
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/ksp-Abhishek/Truthlens-with-Ai-Arena.git
+https://github.com/itsgarvmalik-glitch/Truth_Lens.git
 cd Truthlens-with-Ai-Arena
 ```
 
